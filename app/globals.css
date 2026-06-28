@@ -1,0 +1,142 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-geist-sans), 'Geist Fallback';
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: dark;
+  --background: oklch(0.16 0.012 264);
+  --foreground: oklch(0.96 0.004 90);
+  --card: oklch(0.2 0.014 264);
+  --card-foreground: oklch(0.96 0.004 90);
+  --popover: oklch(0.2 0.014 264);
+  --popover-foreground: oklch(0.96 0.004 90);
+  --primary: oklch(0.82 0.13 82);
+  --primary-foreground: oklch(0.18 0.02 80);
+  --secondary: oklch(0.26 0.015 264);
+  --secondary-foreground: oklch(0.96 0.004 90);
+  --muted: oklch(0.24 0.014 264);
+  --muted-foreground: oklch(0.7 0.012 264);
+  --accent: oklch(0.82 0.13 82);
+  --accent-foreground: oklch(0.18 0.02 80);
+  --destructive: oklch(0.6 0.2 25);
+  --border: oklch(1 0 0 / 9%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.82 0.13 82);
+  --gold: oklch(0.82 0.13 82);
+  --gold-soft: oklch(0.88 0.08 85);
+  --chart-1: oklch(0.82 0.13 82);
+  --chart-2: oklch(0.7 0.1 200);
+  --chart-3: oklch(0.6 0.12 145);
+  --chart-4: oklch(0.65 0.15 30);
+  --chart-5: oklch(0.5 0.02 264);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.2 0.014 264);
+  --sidebar-foreground: oklch(0.96 0.004 90);
+  --sidebar-primary: oklch(0.82 0.13 82);
+  --sidebar-primary-foreground: oklch(0.18 0.02 80);
+  --sidebar-accent: oklch(0.26 0.015 264);
+  --sidebar-accent-foreground: oklch(0.96 0.004 90);
+  --sidebar-border: oklch(1 0 0 / 9%);
+  --sidebar-ring: oklch(0.82 0.13 82);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gold-text {
+    background-image: linear-gradient(
+      180deg,
+      var(--gold-soft) 0%,
+      var(--gold) 60%,
+      #ad721c 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .glass {
+    background: color-mix(in oklch, var(--card) 55%, transparent);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in oklch, var(--foreground) 8%, transparent);
+  }
+  .grain {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      color-mix(in oklch, var(--foreground) 10%, transparent) 1px,
+      transparent 0
+    );
+    background-size: 4px 4px;
+  }
+}
+
+/* Hide scrollbar but keep functionality during splash */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
