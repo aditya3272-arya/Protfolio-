@@ -133,6 +133,24 @@ export const projects = [
     ],
     stack: ['UI/UX', 'Product Thinking', 'Full-Stack Dev', 'HTML', 'CSS', 'SQL', 'PYTHON', ],
   },
+
+  {
+    id: 'autophagia',
+    name: 'Autophagia',
+    subtitle: 'Digital Waste & Carbon Impact Assistant',
+    status: 'Co-Founder, Developer and Designer',
+    accent: 'Rank at Hackathon',
+    description:
+      'A climate-conscious storage tool that scans Google Drive accounts to surface "dark data" — duplicate files, dead backups, and redundant versions quietly consuming energy on servers — and quantifies the real carbon cost of leaving it there. Built around SDG 12 & 13, Autophagia reframes a routine cleanup task as a measurable act of climate action, giving users full visibility and control before anything is removed.',
+    features: [
+      'Real-Time Drive Scanning',
+      'Duplicate, Dead & Redundant File Detection',
+      'Carbon Impact Scoring',
+      'Safe Review-and-Clean Workflow',
+    ],
+    stack: ['UI/UX', 'Product Thinking', 'Full-Stack Dev', 'React', 'Node.js', 'Firebase', 'Google Drive API', ],
+  },
+
 ]
 
 export const achievements = [
@@ -159,6 +177,12 @@ export const achievements = [
     title: 'Student Hackpad 2025 Global',
     detail: '10th of 900 participants — Top 1.1%',
   },
+  {
+    medal: 'gold',
+    title: 'Computer Wizard 2025-26',
+    detail: 'Awarded for being one of the best students in Tech',
+  },
+
 ]
 
 export const beyondPodium = [
@@ -247,10 +271,12 @@ export const futureGoals = [
 ]
 
 export const gallery = [
-  { src: '/gallery/photo-1.jpg', alt: 'Aditya — portrait' },
   { src: '/gallery/photo-2.png', alt: 'Aditya — on the track' },
   { src: '/gallery/photo-3.jpg', alt: 'Aditya — on stage with a trophy' },
   { src: '/gallery/photo-4.jpg', alt: 'Aditya — building at the keyboard' },
+  { src: '/gallery/PHOTO 6.jpeg', alt: 'Aditya — building at the keyboard' },
+  { src: '/gallery/photo-7.jpg', alt: 'Aditya — building at the keyboard' },
+
 ]
 
 export const socials = [

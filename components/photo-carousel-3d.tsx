@@ -16,7 +16,6 @@ function Carousel({ paused }: { paused: boolean }) {
       ref.current.rotation.y += delta * 0.25
     }
     if (ref.current) {
-      // gentle tilt follows pointer
       const targetX = state.pointer.y * 0.2
       ref.current.rotation.x += (targetX - ref.current.rotation.x) * 0.05
     }
