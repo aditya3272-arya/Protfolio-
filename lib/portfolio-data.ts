@@ -217,15 +217,14 @@ export const achievements = [
     detail: 'Runner Up - Web Design & Development (Back-to-back)' 
   },
 
-
   {
     medal: 'silver', 
     title: 'National Design Championship 2026', 
     detail: 'Runner Up - Web Design (3 years in a row)' 
   },
   
-  },
   { medal: 'silver', title: '400m Sprint', detail: 'Silver Medal' },
+  
   {
     medal: 'silver',
     title: 'Interschool Techfest — App Synergy',
