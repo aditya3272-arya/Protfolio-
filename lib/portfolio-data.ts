@@ -2,7 +2,7 @@ export const profile = {
   name: 'Aditya Arya',
   philosophy: 'Not to be the best, rather the only one of my kind.',
   tagline: 'Become the only one of my kind.',
-  role: 'Student Developer · Designer · Athlete · Global Citizen',
+  role: 'Student Developer · LAJF Alumnus · Athlete · Global Citizen',
   location: 'Ghaziabad, Uttar Pradesh, India',
   blurb:
     'Class 11 student at Gurukul The School (2026–27) who competes nationally in design and development, builds digital platforms, and dialogues with students across 20+ countries on climate justice and global concerns.',
@@ -29,9 +29,8 @@ export const about = {
     { label: 'School', value: 'Gurukul The School (2026–27), Class 11' },
     { label: 'Academics', value: 'CBSE Class 10 — 93.2%' },
     { label: 'Languages', value: 'Hindi · English · French (A1)' },
-    { label: 'TELE 2026', value: 'Top 120 globally · 75% Scholarship' },
-    { label: 'Club', value: 'Rotary Interact — Service Above Self' },
-    { label: 'Sports', value: 'Football · Badminton · Sprints · Calisthenics' },
+    { label: 'Club', value: 'Rotary Interact — Director of Technology' },
+    { label: 'LAJF ', value: 'TELE 2026 · Alumnus ' },
   ],
   tags: [
     'Developer',
@@ -39,7 +38,7 @@ export const about = {
     'Athlete',
     'Global Citizen',
     'Writer',
-    'Ethical Leader',
+    'LAJF Alumnus',
   ],
 }
 
@@ -85,12 +84,51 @@ export const platforms = [
 ]
 
 export const projects = [
+
+  {
+    id: 'inhibia',
+    name: 'Inhibia',
+    subtitle: 'AI-Powered School Helpdesk',
+    status: 'Winner - International Finals, Design Championship 2026',
+    accent: 'Flagship Project',
+    description:
+      'A mindful payment companion designed to reduce impulsive digital spending. Inhibia introduces a configurable inhibition window before simulated payments proceed, encouraging users to pause, reconsider, and make more intentional financial decisions.',
+
+    features: [
+      'Configurable inhibition window: 20–180 seconds pause before payment completion',
+      'Trusted Circles: A support system for involving trusted individuals in financial decisions',
+      'Voice Readback: Text-to-Speech support for accessible transaction information',
+      'User Personalization: Editable profile, Light/Dark/System themes, and customizable hold settings',
+      'Real-Time Sync: Firebase Authentication and Cloud Firestore synchronization',
+    ],
+    stack: ['Kotlin', 'Firebase', 'TTS', 'JetPack Compose', 'Formspree', 'Real-Time Sync'],
+  },
+
+  {
+    id: 'mycelia',
+    name: 'Myeclia',
+    subtitle: 'Peer-to-Peer Knowledge Exchange Ecosystem',
+    status: 'Runner-Up - Web Design, Design Championship 2025',
+    accent: 'Featured  Project',
+    description:
+      'A human-to-human knowledge exchange ecosystem inspired by interconnected mycelial networks. Mycelia connects people who want to learn with those willing to teach, transforming individual skills into a continuously growing network through structured exchanges, collaborative learning, and reciprocal knowledge sharing.',
+
+    features: [
+      'Skill Discovery: Search and explore skills, categories, and knowledge contributors',
+      'Structured Exchanges: Learning requests, scheduled sessions, practice assignments, and reviews',
+      'AI Knowledge Checkpoints: Generate quizzes from learning materials to verify understanding',
+      'Mycelia Credits: A reciprocal credit system rewarding teaching and enabling further learning',
+      'Real-Time Ecosystem: Firestore synchronization, notifications, community events, and exchange updates',
+    ],
+    stack: ['React', 'Next.js', 'Firebase', 'Cloud Firestore', 'Firestore onSnapshot', 'AI Quiz Generation',],
+  },
+
   {
     id: 'cortexia',
     name: 'Cortexia',
     subtitle: 'AI-Powered School Helpdesk',
     status: 'Co-creator with Aaniya Sharma',
-    accent: 'Flagship Build',
+    accent: 'Digital Frontdesk',
     description:
       'A high-performance, AI-driven digital assistant built for the modern school ecosystem. Cortexia uses a microservices-inspired architecture to streamline communication between students, staff, and visitors.',
     features: [
@@ -154,17 +192,36 @@ export const projects = [
 ]
 
 export const achievements = [
+  {
+    medal: 'gold', 
+    title: 'International Design Championship Finals 2026', 
+    detail: 'Winner - App Design among top teams from 3 countries (India, KSA, UAE)' 
+  },
+
+  {
+    medal: 'gold',
+    title: 'Computer Wizard 2025-26',
+    detail: 'Awarded for being one of the best students in Tech',
+  },
+
   { medal: 'gold', title: 'Environmental Olympiad 2018', detail: 'Gold Medalist' },
   { medal: 'gold', title: 'Relay 4×100m', detail: '2× Gold Medals' },
   {
     medal: 'silver',
     title: 'National Design Championship 2024',
-    detail: '2nd Place — App Design & Development',
+    detail: '2nd Place - App Design (Among 21 Indian states)',
   },
   {
     medal: 'silver',
     title: 'National Design Championship 2025',
-    detail: '2nd Place — Web Design & Development (Back-to-back!)',
+    detail: 'Runner Up - Web Design & Development (Back-to-back)',
+
+  {
+    medal: 'silver', 
+    title: 'National Design Championship 2026', 
+    detail: 'Runner Up - Web Design (3 years in a row)' 
+  },
+  
   },
   { medal: 'silver', title: '400m Sprint', detail: 'Silver Medal' },
   {
@@ -177,18 +234,14 @@ export const achievements = [
     title: 'Student Hackpad 2025 Global',
     detail: '10th of 900 participants — Top 1.1%',
   },
-  {
-    medal: 'gold',
-    title: 'Computer Wizard 2025-26',
-    detail: 'Awarded for being one of the best students in Tech',
-  },
+
 
 ]
 
 export const beyondPodium = [
-  { label: 'Global Hackathons', value: '5+' },
-  { label: 'Ideathons', value: '3' },
-  { label: 'Interschool Techfests', value: '4' },
+  { label: ' Hackathons', value: '6' },
+  { label: 'Ideathons', value: '4' },
+  { label: 'Interschool Techfests', value: '5' },
   { label: 'Scholar Badges', value: '2×' },
 
 ]
@@ -249,13 +302,13 @@ export const writing = {
 export const futureGoals = [
   {
     term: 'Near Term',
-    title: 'NDC 2026 & 2027',
-    body: 'Claim podium finishes at the National Design Championship 2026 & 2027 to lock in a four-year streak of national excellence.',
+    title: 'DC 2027',
+    body: 'Double International triumph at Design Championship 2027 to lock in a four-year streak of product building excellence.',
   },
   {
     term: 'Mid Term',
-    title: 'RISE & CRS 2027',
-    body: 'Apply for RISE by Schmidt Futures & Rhodes Trust aiming to be the Top 100 global winners. Additionally, applying for Camp Rising Sun 2027 cohort.',
+    title: 'CRS 2027',
+    body: 'Attaining the title of "Rising Sun" by officially being selected for Camp Rising Sun 2027 cohort',
   },
 
   {
@@ -265,7 +318,7 @@ export const futureGoals = [
   },
   {
     term: 'Long Term',
-    title: 'Apple — UAE',
+    title: 'Apple - UAE',
     body: 'Build a professional tech career at Apple in the UAE, at the intersection of design and engineering.',
   },
 ]
@@ -281,7 +334,7 @@ export const gallery = [
 
 export const socials = [
   { label: 'Instagram', href: 'https://www.instagram.com/aditya.arya___/', handle: '@aditya.arya___' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/aditya-arya-9b43b9334/', handle: 'Aditya Arya' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/adityaarya-', handle: 'Aditya Arya' },
   { label: 'GitHub', href: 'https://github.com/aditya3272-arya', handle: 'aditya3272-arya' },
 ]
 
