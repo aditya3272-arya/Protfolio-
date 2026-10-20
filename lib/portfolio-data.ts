@@ -214,7 +214,9 @@ export const achievements = [
   {
     medal: 'silver',
     title: 'National Design Championship 2025',
-    detail: 'Runner Up - Web Design & Development (Back-to-back)',
+    detail: 'Runner Up - Web Design & Development (Back-to-back)' 
+  },
+
 
   {
     medal: 'silver', 
