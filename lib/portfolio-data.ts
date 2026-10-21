@@ -88,7 +88,7 @@ export const projects = [
   {
     id: 'inhibia',
     name: 'Inhibia',
-    subtitle: 'AI-Powered School Helpdesk',
+    subtitle: 'Payment-Accessibility App',
     status: 'Winner - International Finals, Design Championship 2026',
     accent: 'Flagship Project',
     description:
